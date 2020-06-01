@@ -4,8 +4,9 @@ name: 'deploy website and ebooks'
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   job_deploy_website:
